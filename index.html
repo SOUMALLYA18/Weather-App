@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./mediaqueries.css" />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+  </head>
+  <body>
+    <nav>
+      <div class="weather-logo">
+        <img src="./assets/weather-app.png" id="logo" alt="" />
+      </div>
+
+      <div class="search-wrapper">
+        <input
+          type="text"
+          id="search-field"
+          placeholder="Search city....."
+          spellcheck="false"
+        />
+        <button id="search-btn"><i class="fas fa-search"></i></button>
+      </div>
+
+      <div class="location">
+        <button id="current-location-btn">
+          <i class="fa-solid fa-location-crosshairs"></i>
+          <h4>Current Location</h4>
+        </button>
+      </div>
+    </nav>
+    <main class="container">
+      <div class="mleft">
+        <div class="weather-container">
+          <h2 id="title-1">Now</h2>
+          <div class="weapper">
+            <p id="heading">25&deg;<sup>c</sup></p>
+            <img
+              src="./assets/images/weather_icons/01d.png"
+              width="50"
+              height="50"
+              class="weather-icon"
+              id="weatherIcon"
+            />
+          </div>
+          <div><p id="weatherBehavior"></p></div>
+          <div class="calender">
+            <i class="fa-regular fa-calendar"></i>
+            <h4 id="currentDate">Wednesday 1,March</h4>
+          </div>
+          <div class="location">
+            <i class="fa-solid fa-location-dot"></i>
+            <h2 class="city">New York</h2>
+          </div>
+          <div class="time-container">
+            <h2 id="currentTime">12:30 pm</h2>
+          </div>
+        </div>
+      </div>
+      <div class="mright">
+        <h3 id="heading-2">Today's Highlights</h3>
+        <div class="mright-top">
+          <div class="container-2">
+            <h3>Sunrise & Sunset</h3>
+            <div class="main-container">
+              <div class="sun-rise">
+                <i class="fa-regular fa-sun" id="sun-logo"></i>
+                <span>
+                  <h4>Sunrise</h4>
+                  <p id="sun-rise">6:46 am</p>
+                </span>
+              </div>
+              <div class="sun-set">
+                <i class="fa-regular fa-moon" id="moon-logo"></i>
+                <span>
+                  <h4>Sunset</h4>
+                  <p id="sun-set">6:46 pm</p>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="weather-behaviour-container">
+          <div class="weather-items">
+            <h4>Humidity</h4>
+            <div class="main-section">
+              <img
+                src="./assets/images/weather_icons/humidity-logo.png"
+                id="humidity-logo"
+              />
+              <h3 id="humidity-value">95.2 %</h3>
+            </div>
+          </div>
+          <div class="weather-items">
+            <h4>Wind Speed</h4>
+            <div class="main-section">
+              <span><i class="fa-solid fa-wind" id="wind-logo"></i></span>
+              <h3 id="wind-speed-value">121 km/h</h3>
+            </div>
+          </div>
+          <div class="weather-items">
+            <h4>Visibility</h4>
+            <div class="main-section">
+              <img
+                src="./assets/images/weather_icons/visibility.png"
+                id="humidity-logo"
+              />
+              <h3 id="visibility-value">10 km</h3>
+            </div>
+          </div>
+          <div class="weather-items">
+            <h4>Feels Like</h4>
+            <div class="main-section">
+              <i class="fa-solid fa-temperature-three-quarters" id="temp"></i>
+              <h3 id="feels-like-value">10&deg;<sup>c</sup></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="m-bottom">
+        <h3>7 days Forecast</h3>
+        <div class="weekly-updates">
+          <div class="weekdays">
+            <h3>Mon</h3>
+            <span class="wekkly-temp"
+              ><p id="temperature">25&deg;<sup>c</sup></p>
+              <img
+                src="./assets/images/weather_icons/01d.png"
+                width="40"
+                height="40"
+            /></span>
+          </div>
+          <div class="weekdays">
+            <h3>Tue</h3>
+            <span class="wekkly-temp"
+              ><p id="temperature">25&deg;<sup>c</sup></p>
+              <img
+                src="./assets/images/weather_icons/01d.png"
+                width="40"
+                height="40"
+            /></span>
+          </div>
+          <div class="weekdays">
+            <h3>Wed</h3>
+            <span class="wekkly-temp"
+              ><p id="temperature">25&deg;<sup>c</sup></p>
+              <img
+                src="./assets/images/weather_icons/01d.png"
+                width="40"
+                height="40"
+            /></span>
+          </div>
+          <div class="weekdays">
+            <h3>Thu</h3>
+            <span class="wekkly-temp"
+              ><p id="temperature">25&deg;<sup>c</sup></p>
+              <img
+                src="./assets/images/weather_icons/01d.png"
+                width="40"
+                height="40"
+            /></span>
+          </div>
+          <div class="weekdays">
+            <h3>Fri</h3>
+            <span class="wekkly-temp"
+              ><p id="temperature">25&deg;<sup>c</sup></p>
+              <img
+                src="./assets/images/weather_icons/01d.png"
+                width="40"
+                height="40"
+            /></span>
+          </div>
+          <div class="weekdays">
+            <h3>Sat</h3>
+            <span class="wekkly-temp"
+              ><p id="temperature">25&deg;<sup>c</sup></p>
+              <img
+                src="./assets/images/weather_icons/01d.png"
+                width="40"
+                height="40"
+            /></span>
+          </div>
+          <div class="weekdays">
+            <h3>Sun</h3>
+            <span class="wekkly-temp"
+              ><p id="temperature">25&deg;<sup>c</sup></p>
+              <img
+                src="./assets/images/weather_icons/01d.png"
+                width="40"
+                height="40"
+            /></span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

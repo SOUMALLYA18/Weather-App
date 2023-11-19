@@ -1,0 +1,200 @@
+/* Media Query for smaller screens */
+@media screen and (max-width: 600px) {
+  body {
+    overflow: auto;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  #logo {
+    width: 19vw;
+    height: 8vh;
+  }
+
+  .search-wrapper {
+    margin: 0 auto;
+  }
+
+  #search-field {
+    padding: 5px 18px;
+    margin-bottom: 10px;
+  }
+
+  #current-location-btn h4 {
+    display: none;
+  }
+
+  #current-location-btn i {
+    font-size: 1.5rem;
+  }
+
+  .container {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    overflow: auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .container-2 {
+    width: auto;
+    height: auto;
+  }
+  .main-container {
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+  .mleft {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .weather-container {
+    width: 100%;
+    align-items: center;
+    height: auto;
+  }
+
+  .mright {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .weather-behaviour-container {
+    flex-wrap: wrap;
+  }
+  #humidity-logo {
+    width: 12vw;
+    height: 6vh;
+  }
+  .weather-items {
+    width: 100%;
+  }
+  .container {
+    overflow: hidden;
+  }
+
+  .weekly-updates {
+    flex-wrap: wrap;
+  }
+
+  .weekdays {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    gap: 10px;
+  }
+}
+/* Media Query for tablet screens */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  body {
+    overflow: auto;
+  }
+
+  nav {
+    display: flex;
+
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  #logo {
+    width: 10vw;
+    height: 8vh;
+  }
+
+  .search-wrapper {
+    margin: 0 auto;
+  }
+
+  #search-field {
+    padding: 5px 18px;
+    margin-bottom: 10px;
+  }
+
+  #current-location-btn h4 {
+    display: none;
+  }
+
+  #current-location-btn i {
+    font-size: 1.5rem;
+  }
+
+  .container {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    overflow: auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .container-2 {
+    width: auto;
+    height: auto;
+  }
+
+  .main-container {
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+
+  .mleft {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .weather-container {
+    width: 100%;
+    align-items: center;
+    height: auto;
+  }
+
+  .mright {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .weather-behaviour-container {
+    flex-wrap: wrap;
+  }
+
+  #humidity-logo {
+    width: 12vw;
+    height: 6vh;
+  }
+
+  .weather-items {
+    width: 100%;
+  }
+
+  .container {
+    overflow: hidden;
+  }
+
+  .weekly-updates {
+    flex-wrap: wrap;
+  }
+
+  .weekdays {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    gap: 10px;
+  }
+}
